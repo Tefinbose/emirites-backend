@@ -4,8 +4,8 @@ const dotenv = require("dotenv");
 
 const connectDB = require("./config/db");
 
-const authRoutes = require("../backend/routes/authRoutes");
-const enquiryRoutes = require("../backend/routes/EnquiryRoutes");
+const authRoutes = require("./routes/authRoutes");
+const enquiryRoutes = require("./routes/EnquiryRoutes");
 
 dotenv.config();
 
