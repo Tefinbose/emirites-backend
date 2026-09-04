@@ -14,6 +14,6 @@ const {createEnquiry,
   // admin route
   router.get("/",getAllEnquiry);
   // only admin can delete the enquiries
-  router.delete("/:id",authMiddleware,adminMiddleware,deleteEnquiry);
+  router.delete("/:id",deleteEnquiry);
 
   module.exports = router
