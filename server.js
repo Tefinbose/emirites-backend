@@ -18,9 +18,9 @@ connectDB();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-production-frontend-url.com" // add your deployed frontend URL too
+    "https://emrites-frontend-mz7l.vercel.app"
   ],
-  credentials: true, // only needed if you're sending cookies/auth headers
+  credentials: true,
 }));
 app.use(express.json());
 
