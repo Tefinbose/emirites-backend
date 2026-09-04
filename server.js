@@ -16,10 +16,12 @@ connectDB();
 
 // Middleware
 app.use(cors({
-    origin: "https://emrites-frontend-mz7l.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  }));
+  origin: [
+    "http://localhost:5173",
+    "https://your-production-frontend-url.com" // add your deployed frontend URL too
+  ],
+  credentials: true, // only needed if you're sending cookies/auth headers
+}));
 app.use(express.json());
 
 // Routes
